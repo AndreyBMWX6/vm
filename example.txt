@@ -1,0 +1,10 @@
+// функция возведения в квадрат
+: power2 dup * ;
+// функция получения int от пользователя
+: get_arg print read cast_int ;
+
+"Give me $a" get_arg "a" store
+"Give me $b" get_arg "b" store
+"Give me $c" get_arg "c" store
+"Give me $x" get_arg "x" store
+"a" load "x" load * "b" load + "x" load * "c" load + dup println stack

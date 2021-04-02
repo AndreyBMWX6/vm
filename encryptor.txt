@@ -1,0 +1,11 @@
+// функция получения str от пользователя
+: get_str print read cast_str ;
+// функция шифрования(см. функцию 'encr' в vm.py)
+: encrypt get_str encr ;
+// функция дешифрования(см. функцию 'decr' в vm.py)
+: decrypt get_str decr ;
+
+"Enter word for encryption:" encrypt
+"Encrypted word:" print println
+"Enter encrypted word:" decrypt
+"Decrypted word:" print println
